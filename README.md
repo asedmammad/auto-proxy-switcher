@@ -9,13 +9,13 @@ A lightweight Go application that automatically tests and switches between V2Ray
 - Concurrent proxy testing
 - Network connectivity monitoring
 - Caching of working proxies
-- Periodic proxy updates from subscription URL
+- Periodic proxy updates from a subscription URL
 
 ## Prerequisites
 
 - Go 1.24 or higher
 - V2Ray core installed and accessible from PATH
-- Windows operating system (primary support)
+- Gnu/Linux (primary support)
 
 ## Installation
 
@@ -37,7 +37,7 @@ Available flags:
 
 -help: Show help message
 -version: Show version information
--sub-url string: Subscription URL for proxy servers
+-sub-url string: Subscription URL for proxy servers (default "https://some-sub-url.com/sub?max=100&type=vmess")
 -target-url string: Target URL to check proxy connectivity (default "https://google.com")
 -update-cache: Enable periodic proxy cache updates
 -run-tester: Run proxy tester to find working proxies
